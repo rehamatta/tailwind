@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link href="./css/output.css" rel="stylesheet" />
+
+    <title>tailwind</title>
+  </head>
+  <body>
+    <nav
+      class="bg-white fixed w-full z-20 top-0 start-0 shadow-xl dark:bg-gray-700 text-white"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <div class="logo w-[160px]">
+            <img src="./images/asset 0.png" class="h-8 w-full" alt="..." />
+          </div>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            type="button"
+            class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-gray-200 dark:hover:bg-gray-300 dark:focus:ring-gray-800 dark:text-gray-900 dark-mode"
+          ></button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-500 bg-blue-700 transition-colors rounded-sm md:bg-transparent md:text-blue-700 md:p-0 font-bold dark:hover:text-amber-400"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-500 rounded-sm transition-colors md:p-0 dark:text-white dark:hover:text-amber-400 font-normal"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-500 rounded-sm md:p-0 transition-colors dark:text-white dark:hover:text-amber-400 font-normal"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="relative z-0 mt-[48px]">
+        <div
+          id="controls-carousel"
+          class="relative w-full"
+          data-carousel="static"
+        >
+          <div class="relative h-56 overflow-hidden md:h-96">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./images/fabian-irsara-67l-QujB14w-unsplash.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <img
+                src="./images/bg2.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./images/christopher-gower-m_HRfLhgABo-unsplash.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./images/ales-nesetril-Im7lZjxeLhg-unsplash-EFNYJM67.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./images/testtwo.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-200 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-200 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="py-[75px] border border-solid border-gray-300 bg-gray-200 text-center"
+      >
+        <div class="container mx-auto w-[85%]">
+          <div class="my-10">
+            <h2 class="text-4xl">Tools</h2>
+            <p>Lorem ipsum dolor sit amet consectetur !</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+            <div
+              class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 relative"
+            >
+              <i
+                class="fa-solid fa-anchor-circle-exclamation bg-pink-200 p-3 rounded-[50%] absolute -top-5 -translate-x-5"
+              ></i>
+              <h3
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Product
+              </h3>
+              <div class="h-[2px] w-16 bg-red-900 mx-auto my-3"></div>
+              <p class="font-normal text-gray-700 dark:text-gray-400 leading-7">
+                Here are the biggest enterprise technology acquisitions of 2021
+              </p>
+            </div>
+
+            <div
+              class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 relative"
+            >
+              <i
+                class="fa-solid fa-h-square bg-pink-200 p-3 rounded-[50%] absolute -top-5 -translate-x-5"
+              ></i>
+              <h3
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Product
+              </h3>
+              <div class="h-[2px] w-16 bg-red-900 mx-auto my-3"></div>
+              <p class="font-normal text-gray-700 dark:text-gray-400 leading-7">
+                Here are the biggest enterprise technology acquisitions of 2021
+              </p>
+            </div>
+
+            <div
+              class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 relative"
+            >
+              <i
+                class="fa-solid fa-jar-wheat bg-pink-200 p-3 rounded-[50%] absolute -top-5 -translate-x-5"
+              ></i>
+              <h3
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Product
+              </h3>
+              <div class="h-[2px] w-16 bg-red-900 mx-auto my-3"></div>
+              <p class="font-normal text-gray-700 dark:text-gray-400 leading-7">
+                Here are the biggest enterprise technology acquisitions of 2021
+              </p>
+            </div>
+
+            <div
+              class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 relative"
+            >
+              <i
+                class="fa-solid fa-ladder-water bg-pink-200 p-3 rounded-[50%] absolute -top-5 -translate-x-5"
+              ></i>
+              <h3
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Product
+              </h3>
+              <div class="h-[2px] w-16 bg-red-900 mx-auto my-3"></div>
+              <p class="font-normal text-gray-700 dark:text-gray-400 leading-7">
+                Here are the biggest enterprise technology acquisitions of 2021
+              </p>
+            </div>
+
+            <div
+              class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 relative"
+            >
+              <i
+                class="fa-solid fa-icicles bg-pink-200 p-3 rounded-[50%] absolute -top-5 -translate-x-5"
+              ></i>
+              <h3
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Product
+              </h3>
+              <div class="h-[2px] w-16 bg-red-900 mx-auto my-3"></div>
+              <p class="font-normal text-gray-700 dark:text-gray-400 leading-7">
+                Here are the biggest enterprise technology acquisitions of 2021
+              </p>
+            </div>
+
+            <div
+              class="p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 relative"
+            >
+              <i
+                class="fa-solid fa-wrench bg-pink-200 p-3 rounded-[50%] absolute -top-5 -translate-x-5"
+              ></i>
+              <h3
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Product
+              </h3>
+              <div class="h-[2px] w-16 bg-red-900 mx-auto my-3"></div>
+              <p class="font-normal text-gray-700 dark:text-gray-400 leading-7">
+                Here are the biggest enterprise technology acquisitions of 2021
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        class="p-12 bg-gray-800 flex justify-between align-middle footer-icon"
+      >
+        <div>
+          <img src="./images/asset 18.png" alt="" />
+        </div>
+        <div>
+          <i
+            class="text-white fa-brands fa-facebook m-2 hover:text-amber-400"
+          ></i>
+          <i
+            class="text-white fa-brands fa-linkedin m-2 hover:text-amber-400 transition"
+          ></i>
+          <i
+            class="text-white fa-brands fa-square-twitter m-2 hover:text-amber-400 transition"
+          ></i>
+          <i
+            class="text-white fa-brands fa-youtube m-2 hover:text-amber-400 transition"
+          ></i>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

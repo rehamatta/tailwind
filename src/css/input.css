@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@media screen and (max-width: 991px) {
+  .footer-icon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer-icon img {
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+  }
+}
